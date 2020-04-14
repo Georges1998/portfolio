@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-size: 2rem;
+    color: black;
+    animation: text 1s 0.8;
+    font-family: 'Indie Flower', cursive;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: monospace;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+}
+
+label.logo {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media(max-width: 952px) {
+    .pic {
+        width: 100px;
+        height: 100px;
+    }
+    label.logo {
+        font-size: 20px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 900px) {
+    .pic {
+        width: 50px;
+        height: 50px;
+    }
+    html {
+        font-size: 60%;
+    }
+    label.logo {
+        font-size: 20px;
+    }
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ff8364;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 25px;
+    }
+    a:hover {
+        background: none;
+        color: #e23e57;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+.section {
+    height: 850px;
+    padding: 50px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#home {
+    padding: 100px 0;
+    background-image: url(assets/white-ceramic-cup-beside-a-laptop-on-white-table-3740253.jpg);
+}
+
+#about {
+    background-image: url(assets/about.jpg);
+}
+
+#projects {
+    background-image: url(assets/computer-cup-desk-drink-434337.jpg);
+}
+
+#contactMe {
+    background: #c8e7ed;
+}
+
+.blue-square-container {
+    text-align: center;
+}
+
+.blue-square {
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    border: 2px solid black;
+    color: black;
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    display: inline-block;
+}
+
+#first-square {
+    margin-top: 80px;
+}
+
+#second-square {
+    border: 2px solid #f12b6b;
+    color: #f12b6b;
+}
+
+#third-square {
+    border: 2px solid #0245a3;
+    color: #0245a3;
+}
+
+#fourth-square {
+    border: 2px solid #00adb5;
+    color: #00adb5;
+}
+
+.pic {
+    box-shadow: 5px 5px 5px grey;
+    margin-top: 30px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    background-image: url(assets/pic.png);
+    background-size: 250px 250px;
+    border: solid 2px black;
+    transition: all .5s;
+}
+
+.pic:hover {
+    border-radius: 50%;
+}
+
+.icon {
+    margin-top: 30px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    background-size: 100px 100px;
+    border: solid 2px black;
+    transition: all .5s;
+}
+
+#swift {
+    background-image: url(assets/swift.png);
+}
+
+#java {
+    background-image: url(assets/java.jpg);
+}
+
+#flutter {
+    background-image: url(assets/flutter.png);
+}
+
+#angular {
+    background-image: url(assets/Angular.png);
+}
+
+#react {
+    background-image: url(assets/react.png);
+}
+
+#javaS {
+    background-image: url(assets/JavaScript-logo.png);
+}
+
+#python {
+    background-image: url(assets/python.png);
+}
+
+.img-link:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.icon:hover {
+    background-color: crimson;
+    /* background-image: url(assets/GitHub-Mark.png); */
+    border-radius: 50%;
+}
+
+.contentFlex {
+    margin-top: 15px;
+}
+
+.aboutBox {
+    margin-top: 15px;
+    width: 430px;
+    height: 40%;
+}
+
+@keyframes text {
+    0% {
+        margin-top: -40%;
+    }
+}
