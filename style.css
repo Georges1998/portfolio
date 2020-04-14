@@ -153,6 +153,10 @@ a:hover {
     background-image: url(assets/computer-cup-desk-drink-434337.jpg);
 }
 
+#game {
+    background: black
+}
+
 #contactMe {
     background: #c8e7ed;
 }
@@ -188,6 +192,11 @@ a:hover {
 }
 
 #fourth-square {
+    border: 2px solid white;
+    color: white;
+}
+
+#fifth-square {
     border: 2px solid #00adb5;
     color: #00adb5;
 }
@@ -272,4 +281,58 @@ a:hover {
     0% {
         margin-top: -40%;
     }
+}
+
+
+/* GAME CSS*/
+
+.square {
+    width: 30%;
+    background: plum;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.6%;
+    border-radius: 10%;
+    transition: all 1s;
+}
+
+#container {
+    margin: 0 auto;
+    width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 0;
+    transition: all 1s;
+}
+
+#message {
+    text-align: center;
+    color: white;
+}
+
+#pannel {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.selected {
+    color: springgreen;
+}
+
+button {
+    border: none;
+    background: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.5s;
+}
+
+button:hover {
+    cursor: pointer;
 }
