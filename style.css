@@ -161,19 +161,20 @@ a:hover {
 }
 
 #about {
-    background-image: url(assets/about.jpg);
+    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.39), #ff69648a);
 }
 
 #projects {
-    background-color: #dbe2ef;
+    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.39), #dbe2ef);
+    /* background-color: #dbe2ef; */
 }
 
 #game {
-    background: black
+    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.39), #dbe2ef);
 }
 
 #contactMe {
-    background: #fdffab;
+    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.39), #ff8364);
 }
 
 .blue-square-container {

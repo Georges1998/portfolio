@@ -43,7 +43,7 @@ function generateSquares() {
         squares[i].style.background = colors[i];
         squares[i].addEventListener("click", function() {
             clickedColor = this.style.background;
-            this.style.background = "black";
+            this.style.background = "rgba(0, 0, 0, 0)";
             if (correctColor.textContent === clickedColor) {
                 message.textContent = "You Win";
                 h1.style.background = clickedColor;
