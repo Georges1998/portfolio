@@ -9,18 +9,16 @@
 
 h3 {
     font-size: 2rem;
-    color: black;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px white, 1px 0 white, 0 -1px white;
     animation: text 1s 0.8;
 }
 
 html,
 body {
+    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.39), #dbe2ef);
     max-width: 100%;
     overflow-x: hidden;
-}
-
-body {
-    font-family: monospace;
 }
 
 nav {
@@ -32,7 +30,6 @@ nav {
 
 label.logo {
     color: white;
-    font-size: 20px;
     line-height: 80px;
     padding: 0 50px;
     font-weight: bold;
@@ -54,7 +51,6 @@ nav ul li a {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.2rem;
-    font-size: 17px;
     padding: 7px 13px;
     border-radius: 5px;
     transition: all .8s;
@@ -80,7 +76,7 @@ a:hover {
 
 @media(max-width: 1052px) {
     #about {
-        height: 1300px;
+        height: 1000px;
     }
     #home {
         height: 1000px;
@@ -157,24 +153,35 @@ a:hover {
 
 #home {
     padding: 100px 0;
-    background-image: url(assets/white-ceramic-cup-beside-a-laptop-on-white-table-3740253.jpg);
+    /* background-image: url(assets/white-ceramic-cup-beside-a-laptop-on-white-table-3740253.jpg); */
+    box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.39) inset;
+    background-image: url(assets/resume.jpg);
+    color: white;
 }
 
 #about {
-    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.39), #ff69648a);
+    box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.39) inset;
+    /* background-image: url(assets/resume.jpg); */
+    background-image: url(assets/white-ceramic-cup-beside-a-laptop-on-white-table-3740253.jpg);
 }
 
 #projects {
-    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.39), #dbe2ef);
+    box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.39) inset;
+    /* background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.39), #dbe2ef); */
     /* background-color: #dbe2ef; */
+    background-image: url(assets/yellow.jpg);
 }
 
 #game {
-    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.39), #dbe2ef);
+    box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.39) inset;
+    background-image: url(assets/light-bulb-on-white-panel-1166643.jpg);
+    /* background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.39), #dbe2ef); */
 }
 
 #contactMe {
-    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.39), #ff8364);
+    box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.39) inset;
+    /* background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.39), #ff8364); */
+    background-image: url(assets/about.jpg);
 }
 
 .blue-square-container {
@@ -195,6 +202,7 @@ a:hover {
 
 #first-square {
     margin-top: 80px;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 #second-square {
@@ -208,13 +216,13 @@ a:hover {
 }
 
 #fourth-square {
-    border: 2px solid white;
-    color: white;
+    border: 2px solid green;
+    color: green;
 }
 
 #fifth-square {
-    border: 2px solid #ff9a3c;
-    color: #ff9a3c;
+    border: 2px solid #aa96da;
+    color: #aa96da;
 }
 
 .pic {
@@ -223,8 +231,8 @@ a:hover {
     width: 200px;
     height: 200px;
     border-radius: 20%;
-    background-image: url(assets/pic.png);
-    background-size: 220px 220px;
+    background-image: url(assets/George-K..png);
+    background-size: 210px 210px;
     border: solid 1px black;
     transition: all .5s;
 }
@@ -234,7 +242,6 @@ a:hover {
 }
 
 .icon {
-    margin-top: 30px;
     display: inline-block;
     width: 100px;
     height: 100px;
@@ -272,12 +279,24 @@ a:hover {
     background-image: url(assets/python.png);
 }
 
+#lejosLogo {
+    background-image: url(assets/lejos.png);
+    background-color: white;
+}
+
+#github {
+    background-image: url(assets/github.webp);
+}
+
+#slack {
+    background-image: url(assets/slack.webp);
+}
+
 .img-link:hover {
     background-color: rgba(0, 0, 0, 0);
 }
 
 .icon:hover {
-    background-color: crimson;
     /* background-image: url(assets/GitHub-Mark.png); */
     border-radius: 50%;
 }
@@ -312,6 +331,7 @@ a:hover {
     font-size: 1rem;
     color: #323232;
     transition: all .5s;
+    text-align: justify;
 }
 
 .resume:hover {
@@ -322,7 +342,13 @@ a:hover {
     font-size: 14px;
     border-left-width: 3em;
     break-after: auto;
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+h4 {
+    text-align: justify;
+    font-size: 1.4rem;
 }
 
 
@@ -345,7 +371,7 @@ a:hover {
 
 h1 {
     text-align: center;
-    color: white;
+    color: black;
     margin: 0;
     transition: all 1s;
 }
@@ -368,7 +394,7 @@ h1 {
 button {
     border: none;
     background: none;
-    color: white;
+    color: black;
     font-weight: 600;
     letter-spacing: 1px;
     font-size: inherit;
@@ -400,7 +426,7 @@ button:hover {
     margin-top: -22px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -430,11 +456,12 @@ button:hover {
 /* Caption text */
 
 .text {
-    color: #f2f2f2;
-    font-size: 15px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 2rem;
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
+    top: 20px;
     width: 100%;
     text-align: center;
 }
@@ -506,4 +533,30 @@ button:hover {
     .text {
         font-size: 11px
     }
+}
+
+.project {
+    margin-top: 30px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    border: solid 1px black;
+    transition: all .5s;
+    background-repeat: no-repeat;
+}
+
+.project:hover {
+    width: 300px;
+    height: 300px;
+}
+
+#lejos {
+    background-image: url(assets/LejosRobot.webp);
+    background-size: 210px 210px;
+}
+
+#lejos:hover {
+    background-image: url(assets/LejosRobot.webp);
+    background-size: 300px 300px;
 }
