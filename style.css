@@ -74,9 +74,15 @@ a:hover {
     display: none;
 }
 
+@media(max-width: 1252px) {
+    #about {
+        height: 1350px;
+    }
+}
+
 @media(max-width: 1052px) {
     #about {
-        height: 1000px;
+        height: 1300px;
     }
     #home {
         height: 1000px;
@@ -103,6 +109,9 @@ a:hover {
 }
 
 @media(max-width: 900px) {
+    #about {
+        height: 1300;
+    }
     .pic {
         width: 50px;
         height: 50px;
@@ -271,6 +280,15 @@ a:hover {
     background-image: url(assets/react.png);
 }
 
+#gmail {
+    background-image: url(assets/gmail.webp);
+}
+
+#linkedin {
+    background-image: url(assets/linkedin.webp);
+    background-color: white;
+}
+
 #javaS {
     background-image: url(assets/JavaScript-logo.png);
 }
@@ -305,17 +323,23 @@ a:hover {
     margin-top: 15px;
 }
 
+.flexBox {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap
+}
+
 .aboutBox {
     margin-top: 15px;
     max-width: 450px;
     min-width: 200px;
-    height: 400px;
+    height: 600px;
 }
 
 .aboutBox2 {
     margin-top: 15px;
     min-width: 200px;
-    height: 750px;
+    height: 650px;
 }
 
 @keyframes text {
@@ -444,6 +468,12 @@ button:hover {
     left: 0;
 }
 
+.aboutBox2 {
+    margin-top: 15px;
+    max-width: 750px;
+    min-width: 200px;
+}
+
 
 /* On hover, add a black background color with a little bit see-through */
 
@@ -559,4 +589,10 @@ button:hover {
 #lejos:hover {
     background-image: url(assets/LejosRobot.webp);
     background-size: 300px 300px;
+}
+
+.small {
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
 }
